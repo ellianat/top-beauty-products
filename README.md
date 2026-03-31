@@ -13,7 +13,9 @@ Skin Type,
 Gender Target, 
 Main Ingredient, 
 Country of Origin
-- Data was cleaned and standardized for SQL analysis  
+- Data was cleaned and standardized for SQL analysis
+- **Note:** This dataset is from Kaggle and is intended for practice and analysis; it may not represent real products.
+
 
 ## Database Schema
 
@@ -23,10 +25,15 @@ CREATE TABLE products (
     product_name VARCHAR(40),
     brand VARCHAR(40),
     category VARCHAR(40),
-    price_USD DECIMAL(5,2),
-    number_of_reviews INT,
+    price DECIMAL(5, 2),
+    reviews INT,
     skin_type VARCHAR(40),
-    gender_target VARCHAR(10),
+    gender VARCHAR(10),
     main_ingredient VARCHAR(40),
-    country_of_origin VARCHAR(40)
+    origin VARCHAR(40)
 );
+```
+## Key Takeaways
+- **Price Insights:** The most expensive brands were Charlotte Tilbury, Patrick Ta, and Kiehls. While the most expensive products were in the Powder, Makeup Remover, and Contour categories. Most products were in the Luxury price range.
+- **Review Trends:** Rare Beauty, Colourpop, and Huda Beauty products had the highest amount of reviews. 
+- **Ingredient Patterns:** Glycerin was the most used ingredient for oily skin, Shea Butter for dry skin, and Retinol for combination skin.
